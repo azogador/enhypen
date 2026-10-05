@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ENHYPEN - Thinking Challenge</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="app">
+
+    <!-- PORTADA -->
+    <section id="portada" class="pantalla activa">
+
+        <div class="portada-overlay">
+
+            <div class="portada-contenido">
+
+                <span class="etiqueta">CIENCIAS INFORMÁTICAS · 8.º</span>
+
+                <h1>
+                    ENHYPEN
+                    <span>Thinking Challenge</span>
+                </h1>
+
+                <p class="subtitulo">
+                    Pensamiento computacional
+                </p>
+
+                <p class="descripcion">
+                    Dividir problemas, descubrir patrones
+                    y encontrar la información importante.
+                </p>
+
+                <div class="conceptos-portada">
+                    <span>DESCOMPOSICIÓN</span>
+                    <span>PATRONES</span>
+                    <span>ABSTRACCIÓN</span>
+                </div>
+
+                <button id="btnComenzar" class="btn-principal">
+                    COMENZAR
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ZONA DE DESAFÍOS -->
+    <main id="zonaDesafio" class="pantalla">
+
+        <header class="cabecera">
+
+            <div>
+                <span id="numeroDesafio" class="etiqueta"></span>
+                <h2 id="tituloDesafio"></h2>
+            </div>
+
+            <div class="progreso">
+                <span id="textoProgreso"></span>
+
+                <div class="barra">
+                    <div id="barraProgreso"></div>
+                </div>
+            </div>
+
+        </header>
+
+
+        <section class="contenido-desafio">
+
+            <div class="imagen-contenedor">
+                <img id="imagenDesafio" src="" alt="ENHYPEN">
+            </div>
+
+
+            <div class="panel">
+
+                <div class="bloque-teoria">
+
+                    <h3>💡 Idea clave</h3>
+
+                    <p id="textoTeoria"></p>
+
+                </div>
+
+
+                <div id="bloqueEjemplo" class="bloque-ejemplo">
+
+                    <h3>Ejemplo</h3>
+
+                    <p id="textoEjemplo"></p>
+
+                </div>
+
+
+                <div class="temporizador">
+
+                    <div class="reloj">
+                        <span id="contador">30</span>
+                    </div>
+
+                    <div>
+                        <strong id="estadoTiempo">
+                            Leé y pensá antes de responder
+                        </strong>
+
+                        <p id="mensajeTiempo">
+                            Las respuestas se habilitarán en 30 segundos.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div id="zonaActividad" class="zona-actividad bloqueada">
+                    <!-- JavaScript crea aquí cada actividad -->
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- MODAL DE FEEDBACK -->
+    <div id="modalFeedback" class="modal oculto">
+
+        <div class="modal-contenido">
+
+            <div id="iconoFeedback" class="feedback-icono"></div>
+
+            <h2 id="tituloFeedback"></h2>
+
+            <p id="textoFeedback"></p>
+
+            <button id="btnFeedback" class="btn-principal">
+                CONTINUAR
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- CIERRE -->
+    <section id="pantallaFinal" class="pantalla">
+
+        <div class="final-contenido">
+
+            <img
+                src="img/enhypen_03.webp"
+                alt="ENHYPEN"
+                class="imagen-final"
+            >
+
+            <div class="final-texto">
+
+                <span class="etiqueta">
+                    MISIÓN COMPLETADA
+                </span>
+
+                <h1>
+                    Pensaste computacionalmente
+                </h1>
+
+                <div class="conceptos-final">
+
+                    <div>
+                        <strong>DESCOMPOSICIÓN</strong>
+                        <span>Dividir un problema.</span>
+                    </div>
+
+                    <div>
+                        <strong>PATRONES</strong>
+                        <span>Encontrar lo que se repite.</span>
+                    </div>
+
+                    <div>
+                        <strong>ABSTRACCIÓN</strong>
+                        <span>Quedarse con lo importante.</span>
+                    </div>
+
+                </div>
+
+                <p class="frase-final">
+                    Pensar computacionalmente significa organizar
+                    un problema para poder resolverlo mejor.
+                </p>
+
+                <button
+                    id="btnReiniciar"
+                    class="btn-principal"
+                >
+                    VOLVER A EMPEZAR
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
